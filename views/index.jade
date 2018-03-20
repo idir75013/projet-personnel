@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  ul
+  form(action='/users', method='POST')
+  div
+    input(type='text',placeholder="Nom", name='firstname')
+    input(type='text',placeholder="Prénom",name='lastname')
+    textarea.banane(type='text', placeholder="Commentaire",text='text')
+    input(type='email', placeholder="Email",name='email', required)
+    input(type='submit')
