@@ -1,19 +1,27 @@
+@media only screen and (max-width: 600px){
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: Grey;
+  background-image : url('/images/plage20111102.jpg');
+  background-size: 100vh;
+  background-repeat: no-repeat;
 }
+
 
 a {
   color: #00B7FF;
 }
 
 textarea.banane {
-  height: 50vh;
-  
+  resize:none;
+  height: 40vh;
 }
 
 div {
   display: flex;
   flex-direction:column;
+  width: 30%;
+  margin: 30px;
+  position: fixed;
+  top: 40vh;
+
 }
